@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="807afb7f-0b5a-4570-b3bf-c8e6a428cab2" name="Default" comment="adding constructor">
+    <list default="true" id="807afb7f-0b5a-4570-b3bf-c8e6a428cab2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/binary-tree.js" afterPath="$PROJECT_DIR$/binary-tree.js" />
     </list>
@@ -37,9 +37,13 @@
       <file leaf-file-name="binary-tree.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/binary-tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29360968">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.20552677">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!block;n#constructor#0;n#BinaryTree#0" expanded="false" />
+                <element signature="n#!!block;n#insert#0;n#BinaryTree#0" expanded="false" />
+                <element signature="n#!!block;n#contains#0;n#BinaryTree#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +152,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454023549484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding insert">
+      <created>1454024531028</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1454024531028</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -187,7 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding constructor" />
+    <MESSAGE value="adding insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding insert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -206,7 +217,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#BinaryTree#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0;n#BinaryTree#0" expanded="false" />
+            <element signature="n#!!block;n#contains#0;n#BinaryTree#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -228,9 +243,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/binary-tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29360968">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.20552677">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#BinaryTree#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0;n#BinaryTree#0" expanded="false" />
+            <element signature="n#!!block;n#contains#0;n#BinaryTree#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
