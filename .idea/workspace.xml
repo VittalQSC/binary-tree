@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="807afb7f-0b5a-4570-b3bf-c8e6a428cab2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="807afb7f-0b5a-4570-b3bf-c8e6a428cab2" name="Default" comment="completed constr insert and contains">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/binary-tree.js" afterPath="$PROJECT_DIR$/binary-tree.js" />
     </list>
@@ -39,8 +37,8 @@
       <file leaf-file-name="binary-tree.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/binary-tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5543478">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.46195653">
+              <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#BinaryTree#0" expanded="false" />
                 <element signature="n#!!block;n#insert#0;n#BinaryTree#0" expanded="false" />
@@ -166,7 +164,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454025217852</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding isEmpty (not passing)">
+      <created>1454026447778</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1454026447778</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -207,7 +211,9 @@
     <MESSAGE value="adding constructor" />
     <MESSAGE value="adding insert" />
     <MESSAGE value="adding contains" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding contains" />
+    <MESSAGE value="adding isEmpty" />
+    <MESSAGE value="adding isEmpty (not passing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding isEmpty (not passing)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -252,8 +258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/binary-tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5543478">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.46195653">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#BinaryTree#0" expanded="false" />
             <element signature="n#!!block;n#insert#0;n#BinaryTree#0" expanded="false" />

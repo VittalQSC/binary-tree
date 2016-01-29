@@ -59,6 +59,11 @@ class BinaryTree {
 		}
 	}
 
+	recursiveMin(root) {
+		if(!root.left) return root.data;
+		else return recursiveMin(root.left);
+	}
+
 	remove(data) {
 
 	}
