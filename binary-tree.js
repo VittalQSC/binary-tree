@@ -74,11 +74,9 @@ class BinaryTree {
 			if(data < curNode.data) {
 				if(!curNode.left) return;
 				curNode = curNode.left;
-				continue;
 			} else if(data > curNode.data) {
 				if(!curNode.right) return;
 				curNode = curNode.right;
-				continue;
 			}
 		}
 
@@ -86,30 +84,46 @@ class BinaryTree {
 		var minData;
 		var subtree;
 		var subtreeParent = curNode;
-		if(curNode.left) {
+		if(curNode.left && curNode.right) {
+			if (curNode.left) {
+				subtree = curNode.left;
+
+				while (subtree.right) {
+					subtreeParent = subtree;
+					subtree = subtree.right;
+				}
+				minData = subtree.data;
+				if (subtreeParent.data != curNode.data) subtreeParent.right = subtree.left;
+				else subtreeParent.left = subtree.left;
+			} else if (curNode.right) {
+				subtree = curNode.right;
+
+				while (subtree.left) {
+					subtreeParent = subtree;
+					subtree = subtree.left;
+				}
+				minData = subtree.data;
+				if (subtreeParent.data != curNode.data) subtreeParent.left = subtree.right;
+				else subtreeParent.right = subtree.right;
+			}
+		} else if(curNode.left) {
 			subtree = curNode.left;
 
-			while(subtree.right) {
-				subtreeParent = subtree;
-				subtree = subtree.right;
+			if (parent) {
+				if (parent.left && parent.left.data == data) parent.left = subtree;
+				else if (parent.right && parent.right.data == data) parent.right = subtree;
 			}
-			minData = subtree.data;
-			if(subtreeParent.data != curNode.data) subtreeParent.right = subtree.left;
-			else subtreeParent.left = subtree.left;
-		 } else if(curNode.right) {
+		} else if(curNode.right) {
 			subtree = curNode.right;
 
-			while(subtree.left) {
-				subtreeParent = subtree;
-				subtree = subtree.left;
+			if (parent) {
+				if (parent.left && parent.left.data == data) parent.left = subtree;
+				else if (parent.right && parent.right.data == data) parent.right = subtree;
 			}
-			minData = subtree.data;
-			if(subtreeParent.data != curNode.data) subtreeParent.left = subtree.right;
-			else subtreeParent.right = subtree.right;
-		} else if(!curNode.left && !curNode.right){
-			if(parent) {
-				if(parent.left && parent.left.data == data) parent.left = null;
-				else if(parent.right && parent.right.data == data) parent.right = null;
+		} else if (!curNode.left && !curNode.right) {
+			if (parent) {
+				if (parent.left && parent.left.data == data) parent.left = null;
+				else if (parent.right && parent.right.data == data) parent.right = null;
 			}
 			return;
 		}
