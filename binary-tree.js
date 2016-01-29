@@ -68,6 +68,6 @@ class BinaryTree {
 	}
 
 	isEmpty() {
-
+		return !this.root;
 	}
 }
