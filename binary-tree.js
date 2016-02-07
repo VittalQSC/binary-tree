@@ -6,9 +6,12 @@ class BinaryTree {
     }
 
     static getSide(data, nodeData) {
-        if (data == nodeData) return undefined;
-        if (data < nodeData) return 'left';
-        else if (data > nodeData) return 'right';
+        if (data == nodeData)
+            return undefined;
+        if (data < nodeData)
+            return 'left';
+        if (data > nodeData)
+            return 'right';
     }
 
     insert(data) {
@@ -33,14 +36,18 @@ class BinaryTree {
     }
 
     contains(data) {
-        if (!this.root) return false;
+        if (!this.root)
+            return false;
 
         var curNode = this.root;
+        var side;
         while (true) {
-            var side = BinaryTree.getSide(data, curNode.data);
+            side = BinaryTree.getSide(data, curNode.data);
 
             if (!side) return true;
-            if (!curNode[side]) return false;
+            if (!curNode[side]) {
+                return false;
+            }
             else {
                 curNode = curNode[side];
             }
@@ -53,7 +60,7 @@ class BinaryTree {
             this.root = null;
             return;
         }
-        var side; // for search and removing
+        var side; // for search and leaf removing
 
         var parent = null;
         var curNode = this.root;
@@ -104,21 +111,23 @@ class BinaryTree {
 
     }
 
-    getArr(root) {
+    each(root,f) {
+        if(!root) return;
+        if(root.left) this.each(root.left,f);
+        f(root.data);
+        if(root.right) this.each(root.right,f);
+    }
+
+    getArr() {
         var data = [];
-        if (!root) return data;
-        if (root.left) {
-            data = data.concat(this.getArr(root.left));
-        }
-        data.push(root.data);
-        if (root.right) {
-            data = data.concat(this.getArr(root.right));
-        }
+        this.each(this.root,(item)=>{data.push(item);});
         return data;
     }
 
     size() {
-        return this.getArr(this.root).length;
+        var length = 0;
+        this.each(this.root,()=>{length++;});
+        return length;
     }
 
     isEmpty() {
